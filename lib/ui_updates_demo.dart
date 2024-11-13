@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'demo_buttons.dart';
 class UIUpdatesDemo extends StatefulWidget {
   const UIUpdatesDemo({super.key});
 
@@ -39,27 +39,7 @@ class _UIUpdatesDemo extends State<UIUpdatesDemo> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 24),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                TextButton(
-                  onPressed: () {
-                    setState(() {
-                      _isUnderstood = false;
-                    });
-                  },
-                  child: const Text('No'),
-                ),
-                TextButton(
-                  onPressed: () {
-                    setState(() {
-                      _isUnderstood = true;
-                    });
-                  },
-                  child: const Text('Yes'),
-                ),
-              ],
-            ),
+            DemoButtons(),
             if (_isUnderstood) const Text('Awesome!'),
           ],
         ),
