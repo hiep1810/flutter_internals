@@ -39,7 +39,7 @@ class _UIUpdatesDemo extends State<UIUpdatesDemo> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 24),
-            DemoButtons(),
+            const DemoButtons(),
             if (_isUnderstood) const Text('Awesome!'),
           ],
         ),
